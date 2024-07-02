@@ -82,7 +82,6 @@
     font-size: 5rem;
     font-family: var(--ff-serif);
     font-weight: 800;
-    line-height: 0.95;
     text-align: center;
 
     min-width: min-content;
@@ -98,6 +97,7 @@
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
+      line-height: 1.3;
     }
   }
 
