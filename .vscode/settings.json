@@ -1,0 +1,11 @@
+{
+  "editor.rulers": [
+    {
+      "column": 80,
+      "line": 1
+    }
+  ],
+  "cSpell.words": ["Danyella", "endregion", "lineheight", "Lucide"],
+  "cSpell.language": "en,fr",
+  "conventionalCommits.scopes": ["license", "other"]
+}
