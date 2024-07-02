@@ -2,7 +2,7 @@
 title: Second post, but about aubergines
 posted_at: 1719919494535
 description: I love aubergines (no)
-tags:
+categories:
   - svelte
   - backend
   - frontend

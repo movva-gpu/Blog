@@ -8,14 +8,11 @@ export type PostMetadata = {
 	title: string;
 	posted_at: number;
 	description: string;
-	tags: Categories[];
+	categories: string;
 	published: boolean;
 };
 
 export type Post = { slug: string } & PostMetadata;
-
-/** @todo Temporary, remove */
-export type Categories = 'web' | 'frontend' | 'backend' | 'school' | 'svelte';
 
 type BaseCategory = {
 	slug: string;
