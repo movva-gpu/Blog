@@ -10,6 +10,7 @@
   "conventionalCommits.scopes": [
     "license",
     "other",
-    "packages"
+    "packages",
+    "backend"
   ]
 }
