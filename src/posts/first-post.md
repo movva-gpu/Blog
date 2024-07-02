@@ -2,7 +2,7 @@
 title: First post, about rubber duckies
 posted_at: 1719919494536
 description: 🦆🦆🦆
-tags:
+categories:
   - school
 published: true
 ---
