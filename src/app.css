@@ -1,0 +1,131 @@
+@layer root, defaults, layout;
+
+@layer root {
+  :root {
+    /*
+    Font stacks copied from:
+    <https://github.com/system-fonts/modern-font-stacks>
+  */
+
+    --ff-serif: 'Playfair Display Variable', 'Playfair Display', ui-serif,
+      Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+
+    --ff-sans: 'Quicksand Variable', 'Quicksand', ui-rounded,
+      'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari,
+      'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro,
+      sans-serif;
+
+    --ff-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace,
+      'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+      monospace;
+
+    --cl-dark: hsl(270, 52.3%, 8.5%);
+    --cl-light: hsl(252, 98%, 98%);
+    --cl-primary: hsl(271, 100%, 57%);
+    --cl-secondary: hsl(55, 78%, 57%);
+    --cl-tertiary: hsl(200, 68%, 47%);
+
+    --title-gradient: linear-gradient(
+      45deg,
+      var(--cl-primary),
+      var(--cl-secondary)
+    );
+  }
+}
+
+@layer defaults {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+
+  *::before,
+  *::after {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+  }
+
+  body {
+    font-size: var(--font-size-fluid-1);
+    line-height: 1.5;
+    font-family: var(--ff-sans);
+    text-wrap: pretty;
+
+    background-color: var(--cl-dark);
+    color: var(--cl-light);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: var(--font-lineheight-00);
+    font-weight: bold;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-family: var(--ff-serif);
+    font-weight: 800;
+    line-height: 0.95;
+    text-align: center;
+
+    min-width: min-content;
+    max-width: 17ch;
+    margin-inline: auto;
+    margin-bottom: calc(var(--size-4) + 2px);
+  }
+
+  h1,
+  .title-gradient {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background: var(--title-gradient);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  h2 {
+    font-size: var(--font-size-6);
+    font-weight: 700;
+    text-align: center;
+    text-wrap: nowrap;
+
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: var(--size-5);
+  }
+
+  p {
+    max-width: 63ch;
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  a {
+    color: var(--cl-secondary);
+    text-decoration: underline;
+  }
+}
+
+@layer layout {
+  main {
+    padding: var(--size-fluid-5);
+  }
+}
