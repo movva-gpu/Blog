@@ -1,5 +1,4 @@
 <script>
-	import {} from '$lib/lang/en';
 	import { description, title } from '$lib/config';
 </script>
 
