@@ -7,5 +7,9 @@
   ],
   "cSpell.words": ["Danyella", "endregion", "lineheight", "Lucide"],
   "cSpell.language": "en,fr",
-  "conventionalCommits.scopes": ["license", "other"]
+  "conventionalCommits.scopes": [
+    "license",
+    "other",
+    "frontend"
+  ]
 }
