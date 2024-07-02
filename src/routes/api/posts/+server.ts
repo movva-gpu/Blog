@@ -41,6 +41,5 @@ const getPosts = async (): Promise<Post[]> => {
 
 export const GET: RequestHandler = async () => {
 	const posts = await getPosts();
-	console.log(posts);
 	return json(posts);
 };
