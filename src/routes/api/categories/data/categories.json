@@ -1,0 +1,77 @@
+[
+    {
+        "slug": "frontend",
+        "display-name": "Front-end",
+        "icon-type": "lucide",
+        "icon-slug": "computer",
+        "color": "#2f2eff"
+    },
+    {
+        "slug": "backend",
+        "display-name": "Back-end",
+        "icon-type": "lucide",
+        "icon-slug": "server",
+        "color": "#ff2e2e"
+    },
+    {
+        "slug": "devops",
+        "display-name": "DevOps",
+        "icon-type": "lucide",
+        "icon-slug": "git-merge",
+        "color": "#8eff4e"
+    },
+    {
+        "slug": "misc",
+        "display-name": "Misc",
+        "icon-type": "lucide",
+        "icon-slug": "list",
+        "color": "#ffffff",
+        "color-border": true
+    },
+    {
+        "slug": "web-dev",
+        "display-name": {
+            "en": "Web Dev",
+            "fr": "Dev web"
+        },
+        "icon-type": "lucide",
+        "icon-slug": "globe",
+        "color": "#2f8eff"
+    },
+    {
+        "slug": "svelte",
+        "display-name": "Svelte",
+        "icon-type": "simple-icons",
+        "icon-slug": "svelte",
+        "icon-color": true
+    },
+    {
+        "slug": "sveltekit",
+        "display-name": "SvelteKit",
+        "icon-type": "simple-icons",
+        "icon-slug": "svelte",
+        "icon-color": true,
+        "color-border": true        
+    },
+    {
+        "slug": "typescript",
+        "display-name": "TypeScript",
+        "icon-type": "simple-icons",
+        "icon-slug": "typescript",
+        "icon-color": true
+    },
+    {
+        "slug": "javascript",
+        "display-name": "JavaScript",
+        "icon-type": "simple-icons",
+        "icon-slug": "javascript",
+        "icon-color": true
+    },
+    {
+        "slug": "react",
+        "display-name": "React",
+        "icon-type": "simple-icons",
+        "icon-slug": "react",
+        "icon-color": true
+    }
+]
