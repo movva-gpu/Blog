@@ -39,6 +39,16 @@
     "color": "#2f8eff"
   },
   {
+    "slug": "school",
+    "display-name": {
+      "en": "School",
+      "fr": "École"
+    },
+    "icon-type": "lucide",
+    "icon-slug": "school",
+    "color": "#2f8eff"
+  },
+  {
     "slug": "svelte",
     "display-name": "Svelte",
     "icon-type": "simple-icons",
