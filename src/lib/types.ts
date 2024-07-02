@@ -23,14 +23,14 @@ type BaseCategory = {
 	'icon-type': string;
 	'icon-slug': string;
 	'color-border'?: boolean;
-  }
-  
-  type CategoryWithColor = BaseCategory & {
+}
+
+type CategoryWithColor = BaseCategory & {
 	color: string;
-  }
-  
-  type CategoryWithIconColor = Omit<BaseCategory, 'color'> & {
+}
+
+type CategoryWithIconColor = Omit<BaseCategory, 'color'> & {
 	'icon-color': true;
-  }
-  
-  export type Category = CategoryWithColor | CategoryWithIconColor;
+}
+
+export type Category = CategoryWithColor | CategoryWithIconColor;
