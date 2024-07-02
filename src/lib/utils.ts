@@ -47,9 +47,9 @@ export const lucidify = (text: string) => {
 
 export const simpleIconsify = (text: string) => {
 	return 'si' + lucidify(text);
-}
+};
 
-export const findCategory = (categories: Category[], slug: string) => {
+export const getCategoryBySlug = (categories: Category[], slug: string) => {
 	return categories.find((category) => category.slug === slug);
 };
 
@@ -75,4 +75,10 @@ export const getLucideIcon = (iconSlug: string): SvelteComponent => {
 	return (icons as unknown as { [key: string]: SvelteComponent })[
 		lucidify(iconSlug)
 	];
+};
+
+export const getSiIconColor = (iconSlug: string) => {
+	return '#' + (simpleIcons as unknown as { [key: string]: SimpleIcon })[
+		simpleIconsify(iconSlug)
+	].hex;
 };

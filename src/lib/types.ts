@@ -8,7 +8,7 @@ export type PostMetadata = {
 	title: string;
 	posted_at: number;
 	description: string;
-	categories: string;
+	categories: string[];
 	published: boolean;
 };
 
@@ -20,9 +20,6 @@ type BaseCategory = {
 	'icon-type': 'lucide' | 'simple-icons';
 	'icon-slug': string;
 	'color-border'?: boolean;
-};
-
-type CategoryWithColor = BaseCategory & {
 	color: string;
 };
 
@@ -30,4 +27,4 @@ type CategoryWithIconColor = Omit<BaseCategory, 'color'> & {
 	'icon-color': true;
 };
 
-export type Category = CategoryWithColor | CategoryWithIconColor;
+export type Category = BaseCategory | CategoryWithIconColor;

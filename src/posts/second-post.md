@@ -4,9 +4,10 @@ posted_at: 1719919494535
 description: I love aubergines (no)
 categories:
   - svelte
+  - sveltekit
   - backend
   - frontend
-  - web
+  - web-dev
 published: true
 ---
 
