@@ -1,7 +1,7 @@
 <footer>
 	<p>
-		&copy; 2024 <a href="danyella.works">Danyella Strikann</a> &ndash;
-        Licensed under the MIT License
+		&copy; 2024 <a href="danyella.works">Danyella Strikann</a> &ndash; Licensed
+		under the MIT License
 	</p>
 </footer>
 
