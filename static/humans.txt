@@ -1,0 +1,29 @@
+/* TEAM */
+Creator: Danyella Strikann
+Contact: danyellastrikann@duck.com
+Github: https://github.com/movva-gpu
+
+/* THANKS */
+To the developers of the libraries used in this project:
+* fav.farm
+    * https://fav.farm/
+* Open Props
+    * https://open-props.style
+* Lucide
+    * https://lucide.dev
+* SvelteKit
+    * https://kit.svelte.dev
+* Fontsource
+    * https://fontsource.org
+
+/* LICENSE */
+MIT License
+
+/* SITE */
+Last Update: 02/07/2024
+Lang: fr,en
+DOCTYPE: html
+Standards: HTML5, CSS3, JavaScript ES6
+Frameworks: SvelteKit, Svelte
+Sofwares: VSCodium, Librewolf (browser and debug), Windows and openSUSE (OS), GitHub (VCS Host)
+Source: https://github.com/movva-gpu/Blog
