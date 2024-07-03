@@ -45,6 +45,8 @@
 		border-radius: 0;
 		border: 0 solid transparent;
 
+		isolation: initial;
+
 		transition:
 			opacity 667ms linear,
 			background-color 667ms linear,
@@ -54,6 +56,8 @@
 			top 1s ease,
 			padding 1s ease,
 			width 1s ease;
+
+		z-index: 10000;
 
 		&::after {
 			content: '';
