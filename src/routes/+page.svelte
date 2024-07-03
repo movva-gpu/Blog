@@ -8,6 +8,7 @@
 		getSiIcon,
 		getSiIconColor
 	} from '$lib/utils';
+	import dayjs from 'dayjs';
 	import { BugIcon } from 'lucide-svelte';
 
 	export let data: { posts: Post[]; categories: Category[] };
@@ -75,11 +76,17 @@
 <div class="blog-wrapper">
 	{#each data.posts as post}
 		<div class="blogpost">
-			<h3>
-				<a href="/{post.slug}">
-					{post.title}
-				</a>
-			</h3>
+			<hgroup>
+				<h3>
+					<a href="/{post.slug}">
+						{post.title}
+					</a>
+				</h3>
+				<h4>
+					Posted on
+					{dayjs(post.posted_at).format('MMMM D, YYYY')}
+				</h4>
+			</hgroup>
 			<p>
 				{post.description}
 			</p>
@@ -128,25 +135,30 @@
 		height: 480px;
 		padding: var(--size-fluid-4);
 
-
 		background-color: hsl(var(--gray-12-hsl) / 20%);
 		border-radius: var(--radius-3);
 
 		& h3 {
-			display: inline-block;
+			display: block;
 			font-size: var(--font-size-5);
-			margin-bottom: calc(var(--size-fluid-1) - 0.05em);
+			margin-bottom: calc(var(--size-relative-2) - 0.05em);
 			line-height: 1.2;
 			translate: 0 -0.05em;
-		& a {
+
+			& a {
 				color: inherit;
 			}
+		}
+		& h4 {
+			display: block;
+			line-height: 1.2;
+			margin-bottom: var(--size-relative-1);
 		}
 		& p:not(.category *) {
 			width: fit-content;
 			margin-inline: unset;
 			font-size: var(--font-size-4);
-			margin-bottom: var(--size-fluid-3);
+			margin-bottom: var(--size-relative-3);
 		}
 	}
 
@@ -179,7 +191,7 @@
 
 	.category {
 		display: flex;
-			align-items: center;
+		align-items: center;
 		padding: var(--size-2) var(--size-3);
 		border-radius: var(--radius-round);
 		background: var(--_color);
